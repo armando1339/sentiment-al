@@ -2,6 +2,8 @@
 
 sentiment-al is Sentiment Analysis Service that allow the analysis of text throught [SENTIM-API](https://sentim-api.herokuapp.com/).
 
+[![Build Status](https://travis-ci.com/armando1339/sentiment-al.svg?branch=master)](https://travis-ci.com/armando1339/sentiment-al) [![Coverage Status](https://coveralls.io/repos/github/armando1339/sentiment-al/badge.svg?branch=master)](https://coveralls.io/github/armando1339/sentiment-al?branch=master)
+
 ## Installation
 
 Add this line to your application's Gemfile:

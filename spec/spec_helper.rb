@@ -1,6 +1,9 @@
+require 'coveralls'
 require "bundler/setup"
 require "sentiment"
 require "pry"
+
+Coveralls.wear!
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
