@@ -37,6 +37,9 @@ sentiment_al.successfully?
 # => Verify the response
 sentiment_al.response
 
+# => Response to hash
+sentiment_al.response_to_hash
+
 ```
 
 Verify the status of HTTP Request

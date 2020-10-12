@@ -21,6 +21,10 @@ module SentimentAl
         response.code.start_with?('2')
       end
 
+      def response_to_hash
+        JSON.parse(response.body)
+      end
+
       private
 
       # => Search information about

@@ -37,4 +37,10 @@ RSpec.describe SentimentAl::Service do
       expect( subject.call(text: '').successfully? ).to be(false)
     end
   end
+
+  describe '#response_to_hash' do
+    it 'should parse SENTI-API response into a hash' do
+      expect(subject.call(text: 'Shit').response_to_hash).to be_kind_of Hash
+    end
+  end
 end
