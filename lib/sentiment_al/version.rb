@@ -1,3 +1,3 @@
 module SentimentAl
-  VERSION = "1.0.0beta"
+  VERSION = "1.1.0beta"
 end
