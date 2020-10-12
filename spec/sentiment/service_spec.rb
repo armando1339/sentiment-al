@@ -1,6 +1,6 @@
-RSpec.describe Sentiment::Service do
+RSpec.describe SentimentAl::Service do
 
-  subject { Sentiment::Service }
+  subject { SentimentAl::Service }
 
   describe '#call' do
     context 'bad request' do
@@ -18,8 +18,8 @@ RSpec.describe Sentiment::Service do
     end
 
     context '200 OK request' do
-      it 'should return Sentiment::Service with the process' do
-        expect(subject.call text: 'Shit').to be(Sentiment::Service)
+      it 'should return SentimentAl::Service with the process' do
+        expect(subject.call text: 'Shit').to be(SentimentAl::Service)
       end
 
       it 'should generate an #response method in singleton' do

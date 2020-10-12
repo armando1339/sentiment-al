@@ -1,4 +1,4 @@
-module Sentiment
+module SentimentAl
   class HttpRequest
     attr_accessor :uri, :protocol, :request
 

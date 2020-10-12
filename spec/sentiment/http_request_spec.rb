@@ -1,6 +1,6 @@
-RSpec.describe 'Instance of', Sentiment::HttpRequest do
+RSpec.describe 'Instance of', SentimentAl::HttpRequest do
 
-  subject{ Sentiment::HttpRequest.new text: "shit" }
+  subject{ SentimentAl::HttpRequest.new text: "shit" }
 
   context 'should respond to' do
     it('#uri'){ expect(subject.respond_to? :uri).to be_truthy }
@@ -16,7 +16,7 @@ RSpec.describe 'Instance of', Sentiment::HttpRequest do
     end
 
     context 'with no text' do
-      subject{ Sentiment::HttpRequest.new text: "" }
+      subject{ SentimentAl::HttpRequest.new text: "" }
 
       it 'should generate an internal server error instance' do
         expect(subject.start).to be_kind_of(Net::HTTPInternalServerError)

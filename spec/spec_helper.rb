@@ -1,6 +1,6 @@
 require 'coveralls'
 require "bundler/setup"
-require "sentiment"
+require "sentiment_al"
 require "pry"
 
 Coveralls.wear!

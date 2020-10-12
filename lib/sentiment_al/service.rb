@@ -1,4 +1,4 @@
-module Sentiment
+module SentimentAl
   class Service
     class << self
       attr_reader :params, :response, :unincluded_params
