@@ -1,7 +1,7 @@
 require_relative 'lib/sentiment_al/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "sentiment-al"
+  spec.name          = "sentiment-all"
   spec.version       = SentimentAl::VERSION
   spec.authors       = ["Armando Alejandre"]
   spec.email         = ["armando1339@gmail.com"]
