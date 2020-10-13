@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.metadata["allowed_push_host"] = "https://rubygems.org/"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/armando1339"
+  spec.metadata["source_code_uri"] = "https://github.com/armando1339/sentiment-all"
   # spec.metadata["changelog_uri"] = "Put your gem's CHANGELOG.md URL here."
 
   # Specify which files should be added to the gem when it is released.

@@ -1,30 +1,12 @@
-# sentiment-al
+# sentiment-all
 
-sentiment-al is Sentiment Analysis Service that allow the analysis of text throught [SENTIM-API](https://sentim-api.herokuapp.com/).
+sentiment-all is Sentiment Analysis Service that allow the analysis of text throught [SENTIM-API](https://sentim-api.herokuapp.com/).
 
 [![Build Status](https://travis-ci.com/armando1339/sentiment-al.svg?branch=master)](https://travis-ci.com/armando1339/sentiment-al) [![Coverage Status](https://coveralls.io/repos/github/armando1339/sentiment-al/badge.svg?branch=master)](https://coveralls.io/github/armando1339/sentiment-al?branch=master)
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'sentiment-al'
-```
-
-And then execute:
-
-```bash
-$ bundle install
-```  
-
-Or install it yourself as:
-
-```bash
-$ gem install sentiment-al
-```
-
 ## Usage
+
+Just call the service passing through a text to be processed.
 
 ```ruby
 
@@ -49,6 +31,53 @@ sentiment_al.response
 sentiment_al.response.code
 sentiment_al.response.message
 sentiment_al.response.body
+```
+
+It's also available the constant SentimentAl::Service.
+
+```ruby
+
+# => Execute the service
+SentimentAl::Service.call text: "Candy"
+
+# => Verify the SENTIM-API responce
+SentimentAl::Service.successfully?
+
+# => Verify the response
+SentimentAl::Service.response
+
+# => Response to hash
+SentimentAl::Service.response_to_hash
+
+```
+
+Verify the status of HTTP Request
+
+```ruby
+SentimentAl::Service.response
+SentimentAl::Service.response.code
+SentimentAl::Service.response.message
+SentimentAl::Service.response.body
+```
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'sentiment-all', '~> 1.2.1beta'
+```
+
+And then execute:
+
+```bash
+$ bundle install
+```
+
+Or install it yourself as:
+
+```bash
+$ gem install sentiment-all
 ```
 
 ## Development

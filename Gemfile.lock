@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sentiment-all (1.2.0beta)
+    sentiment-all (1.2.1beta)
 
 GEM
   remote: https://rubygems.org/
